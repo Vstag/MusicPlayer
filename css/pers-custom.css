@@ -1,0 +1,100 @@
+/**
+ * 个性推荐页面
+ */
+
+
+.right-box .recm_list {
+    position: relative;
+    /* background-color: red; */
+    margin: auto;
+    width: 96%;
+    /* margin-top: 10px; */
+}
+
+.recm_list .recm_word {
+    font-size: 20px;
+    color: #434343;
+    margin-bottom: 3px;
+    margin-top:13px;
+    margin-left:15px;
+    width: 150px;
+    user-select: none;
+    font-weight: bold;
+}
+
+.recm_list .recm_word2 {
+    font-size: 13px;
+    color: #999;
+    user-select: none;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.recm_list .recm_word3 {
+    font-size: 20px;
+    color: #434343;
+    margin-bottom: 14px;
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 150px;
+    user-select: none;
+    font-weight: bold;
+}
+
+.recm_list ul {
+    display: flex;
+    flex-wrap: wrap; /*自动换行*/
+    justify-content: space-between;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.recm_list ul li {
+    text-align: center;
+    overflow: visible;
+    width: 18%;
+    margin-bottom: 13px;   
+   
+}
+
+        .recm_list ul li span {
+            display: block;
+            font-size: 14px;
+            color: #434343;
+        }
+
+        .recm_list ul li img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+           
+        }
+
+.recm_list ul li .image-wrapper{
+     position: relative;
+}
+
+.recm_list ul li .image-wrapper::before {
+    font-family: "iconfont";
+    content: '\e624'; /* 播放键的 Unicode 字符，需要设置字体为适当的图标字体 */
+    position: absolute; /* 设置播放键为绝对定位，相对于容器定位 */
+    left: 50%; /* 将播放键水平居中 */
+    top: 50%; /* 将播放键垂直居中 */
+    transform: translate(-50%, -50%); /* 通过平移来精确定位播放键在容器中心 */
+    font-size: 45px; /* 设置播放键的大小 */
+    color: white; /* 设置播放键的颜色为白色 */
+    opacity: 0; /* 初始时将播放键的透明度设为 0，隐藏起来 */
+   
+}
+
+.recm_list ul li .image-wrapper:hover img{
+    filter: brightness(0.4); /* 鼠标悬停时将容器中的图片灰化 */
+}
+
+
+
+.recm_list ul li .image-wrapper:hover::before {
+    opacity: 1; /* 鼠标悬停时将播放键的透明度设为 1，显示出来 */
+    z-index: 9999;
+    filter: brightness(1);
+}

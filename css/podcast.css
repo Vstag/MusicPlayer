@@ -1,0 +1,29 @@
+/**
+ * 播客页面
+ */
+
+.right-box {
+    padding: 30px;
+}
+
+.top {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.top .left-side img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.top .right-side img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left:25px;
+    border-radius: 5px;
+}

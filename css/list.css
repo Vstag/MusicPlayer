@@ -1,0 +1,152 @@
+/**
+ * 公共卡片样式
+ */
+
+.recm-list {
+    position: relative;
+    /* width: 100%; */
+    margin-bottom: 30px;
+}
+
+/*标题样式*/
+.recm-list .recm-title {
+    font-size: 20px;
+    color: #434343;
+    margin-bottom: 15px;
+    width: 100px;
+    user-select: none;
+}
+
+/*------卡片样式-c-1-140-140------begin*/
+#c-1-140-140 ul{
+    display: flex;
+    flex-wrap: wrap; /*自动换行*/
+    justify-content: space-between;
+}
+
+#c-1-140-140 ul li {
+   width: 140px;
+   text-align: left;
+   color: #434343;
+   font-size: 14px;
+   margin-bottom: 15px;
+
+}
+
+#c-1-140-140 ul li span{
+    display: block;
+    text-align: left;
+}
+
+#c-1-140-140 ul li img{
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#c-1-140-140 ul li img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*------卡片样式-c-1-140-140------end*/
+
+/*------卡片样式-r-3-80-80-------begin*/
+#r-3-80-80 ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 每行最多两个元素 */
+    grid-gap: 20px; /* 元素之间的间隔 */
+}
+
+#r-3-80-80 ul li {
+   display: flex;
+   color: #434343;
+   font-size: 14px;
+}
+
+#r-3-80-80 ul li:hover {
+    background-color: #ebebeb;
+ }
+
+#r-3-80-80 ul li div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* padding: 5px 0; */
+}
+
+#r-3-80-80 ul li span:nth-child(2) {
+    display: block;
+    border-radius: 2px;
+    height: 15px;
+    line-height: 15px;
+    width: 25px;
+    border: 1px solid;
+}
+
+#r-3-80-80 ul li span:not(span:first-child){
+    color: rgba(124, 124, 124, 0.6);
+    font-size: smaller;
+}
+
+#r-3-80-80 ul li img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/*------卡片样式-r-3-80-80------end*/
+
+/*------卡片样式-c-2-240-140------begin*/
+#c-2-240-140 ul{
+    display: flex;
+    flex-wrap: wrap; /*自动换行*/
+    justify-content: space-between;
+}
+
+#c-2-240-140 ul li {
+   text-align: left;
+   color: #434343;
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+
+#c-2-240-140 ul li span{
+    display: block;
+}
+
+#c-2-240-140 ul li span:last-child {
+    color: rgba(124, 124, 124, 0.6);
+}
+
+#c-2-240-140 ul li img{
+    width: 240px;
+    height: 140px;
+    border-radius: 5px;
+}
+/*------卡片样式-c-1-140-140------end*/
+
+/*------卡片样式-c-1-160-160------begin*/
+#c-1-160-160 ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#c-1-160-160 ul li {
+   text-align: left;
+   color: #434343;
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+
+#c-1-160-160 ul li span{
+    display: block;
+}
+
+#c-1-160-160 ul li img{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+}
+/*------卡片样式-c-1-160-160------end*/

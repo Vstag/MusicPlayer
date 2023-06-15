@@ -1,0 +1,37 @@
+/**
+ * 视频页面
+ */
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: 15px 0;
+    color: #7c7c7c;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+.nav>span {
+    /* display: inline-block; */
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 4px 10px;
+}
+
+.nav>span:hover {
+    background-color: #f2f2f2;
+}
+
+.nav ul li {
+    display: inline-block;
+    font-size: small;
+    padding: 0 10px;
+}
+
+.nav ul li:hover {
+    color: #434343;
+}
+
+.top {
+    padding: 0 25px;
+}

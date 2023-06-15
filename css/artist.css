@@ -1,0 +1,70 @@
+/**
+ * 歌手页面
+ */
+
+.recm-list {
+  margin: 0 30px;
+}
+
+.label {
+  font-size: small;
+  color: #7c7c7c;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  margin: 0 15px;
+}
+
+.label ul li {
+  display: inline-block;
+  padding: 6px 0;
+}
+
+.label ul li:not(li:last-child) {
+  margin-right: 35px;
+}
+
+.labelul li:first-child {
+  color: #434343;
+}
+
+.label ul:not(ul:nth-child(3)) li:nth-child(2),
+.abc .first {
+  border-radius: 20px;
+  color: #e94242;
+  background-color: #fef5f5;
+  padding: 2px 10px;
+}
+
+.label ul li:not(li:nth-child(2),.abc):hover,
+.abc span:not(.first):hover {
+  color: #434343;
+}
+
+.label ul:not(:nth-child(3)) li:nth-child(2):hover,
+.abc .first:hover {
+  background-color: #fdeeee;
+}
+
+.label>ul:nth-child(3)>li:nth-child(2) {
+  position: relative;
+  /* height: 100px; */
+}
+
+.label>ul:nth-child(3)>li:first-child {
+  position: relative;
+  top: -67px;
+}
+
+.abc {
+  width: 76%;
+  /* background-color: aqua; */
+}
+
+.abc span:not(span:first-child) {
+  padding: 2px 8px;
+  margin: 10px;
+  line-height: 2.5;
+  text-align: center;
+}
+
